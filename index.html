@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JampaMatch | O lugar certo para você em João Pessoa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="pin" viewBox="0 0 24 34"><path fill-rule="evenodd" d="M12 0C5.4 0 0 5.2 0 11.7 0 20 12 34 12 34s12-14 12-22.3C24 5.2 18.6 0 12 0zm0 16.5a4.8 4.8 0 110-9.6 4.8 4.8 0 010 9.6z"/></symbol>
+    <symbol id="check" viewBox="0 0 30 30"><path d="M3 16l8 8L27 6" fill="none" stroke="#a9bd78" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <g id="blob"><path d="M60 10C95 0 130 25 125 60S90 120 50 110 0 70 10 40 35 18 60 10z"/></g>
+  </defs>
+</svg>
+
+<header class="hero">
+  <svg class="contorno a" viewBox="-60 -60 260 240" aria-hidden="true"><g transform="translate(62 62)"><use href="#blob" transform="translate(-62 -62) scale(1)"/><use href="#blob" transform="translate(-62 -62) scale(1.35) translate(-16 -14)"/><use href="#blob" transform="translate(-62 -62) scale(1.7) translate(-30 -28)"/><use href="#blob" transform="translate(-62 -62) scale(2.05) translate(-42 -40)"/></g></svg>
+  <svg class="contorno b" viewBox="-60 -60 260 240" aria-hidden="true"><g transform="translate(62 62)"><use href="#blob" transform="translate(-62 -62) scale(1)"/><use href="#blob" transform="translate(-62 -62) scale(1.35) translate(-16 -14)"/><use href="#blob" transform="translate(-62 -62) scale(1.7) translate(-30 -28)"/></g></svg>
+  <div class="wrap">
+    <div class="marca">
+      <h1>JampaMatch</h1>
+      <svg class="trilha" viewBox="0 0 330 120" aria-hidden="true">
+        <path class="rota" d="M12 100 C60 70 90 50 120 48 C150 46 175 80 210 84 C250 88 280 78 318 70"/>
+        <use class="pin" href="#pin" x="0" y="66" width="24" height="34"/>
+        <use class="pin" href="#pin" x="108" y="14" width="24" height="34"/>
+        <use class="pin" href="#pin" x="150" y="0" width="24" height="34"/>
+        <use class="pin" href="#pin" x="198" y="50" width="24" height="34"/>
+        <use class="pin" href="#pin" x="306" y="34" width="24" height="34"/>
+      </svg>
+    </div>
+    <p class="sub">É sobre o lugar certo para você</p>
+    <p class="lead">Responda cinco perguntas rápidas e descubra quais lugares de João Pessoa combinam com o seu jeito de passear. Para quem mora aqui e para quem está de visita.</p>
+    <a class="btn" href="#quiz">Fazer o quiz</a>
+  </div>
+</header>
+
+<section class="onda" aria-label="Proposta do JampaMatch">
+  <svg class="fundo" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 70 C200 20 380 40 560 70 S860 110 1000 80 L1000 340 L0 340z" fill="#3d6b57" opacity=".85"/>
+    <path d="M0 120 C220 70 400 100 580 130 S860 150 1000 130 L1000 330 L0 330z" fill="#7fb4c9"/>
+    <path d="M0 250 C200 200 400 220 600 250 S880 290 1000 250 L1000 400 L0 400z" fill="#7a9645"/>
+  </svg>
+  <div class="wrap" style="color:var(--mata-fundo)">
+    <span class="l1" style="color:var(--creme)">E se você soubesse</span>
+    <span class="l2" style="color:var(--creme)">que vai gostar</span>
+    <span class="l3" style="color:var(--creme)">antes de ir?</span>
+  </div>
+</section>
+
+<section class="dif">
+  <div class="wrap">
+    <h2>Diferenciais</h2>
+    <div class="grade">
+      <div class="item"><svg><use href="#check"/></svg><div><b>Quiz de um minuto</b><span>Perguntas simples sobre o tipo de passeio que você curte.</span></div></div>
+      <div class="item"><svg><use href="#check"/></svg><div><b>Indicação sob medida</b><span>Os lugares que mais combinam com as suas respostas, com o motivo.</span></div></div>
+      <div class="item"><svg><use href="#check"/></svg><div><b>Passeio consciente</b><span>Cada lugar traz uma dica para visitar sem agredir a natureza.</span></div></div>
+      <div class="item"><svg><use href="#check"/></svg><div><b>Para morador e turista</b><span>Do ponto clássico ao cantinho que pouca gente conhece.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="quiz" id="quiz" aria-live="polite">
+  <svg class="contorno" viewBox="-60 -60 260 240" aria-hidden="true"><g transform="translate(62 62)"><use href="#blob" transform="translate(-62 -62) scale(1)"/><use href="#blob" transform="translate(-62 -62) scale(1.35) translate(-16 -14)"/><use href="#blob" transform="translate(-62 -62) scale(1.7) translate(-30 -28)"/></g></svg>
+  <div class="wrap">
+    <h2>Qual é o seu rolê?</h2>
+    <div class="progresso" id="prog" aria-hidden="true"></div>
+    <div id="area"></div>
+    <button class="voltar" id="voltar" hidden>Voltar uma pergunta</button>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>JampaMatch</b>
+    <p>Projeto de extensão sobre meio ambiente e turismo em João Pessoa.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
